@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.cakewalk_tags_container {
+    display: flex;
+    position: relative;
+}
+
+.cakewalk_tags_display {
+    display: flex;
+    border: 1px solid #d8dae5;
+    border-right: 0;
+    width: fit-content;
+    padding: 8px;
+    position: relative;
+}
+.cakewalk_tags_display span.tag {
+    display: inline-block;
+    font-family: system-ui;
+    margin-right: 8px;
+    background-color: #edeff5;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: #474d66;
+}
+
+.cakewalk_tags_display span.tag span.close {
+    margin: 0 0 0 7px;
+    font-weight: 900;
+    cursor: pointer
+}
+
+.cakewalk_tags_input {
+    border: 1px solid #d8dae5;
+    border-left: 0;
+    border-right: 0;
+    width: 100px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+button.cakewalk_tags_clear_button {
+    background: none;
+    border: 1px solid #d8dae5;
+    border-left: 0;
+    color: #777777;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+button.cakewalk_tags_clear_button:hover {
+    background-color: #e7e7e7;
+    color: #555555;
+}
+
+.cakewalk_tags_container .cakewalk_tags_results {
+    position: absolute;
+    border: 1px solid #d8dae5;
+    width: fit-content;
+    top: 45px;
+}
+
+.cakewalk_tags_container .cakewalk_tags_results .cakewalk_tags_existing_tag {
+    font-family: monospace;
+    background-color: #edeff5;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 4px;
+    margin: 2px;
+    cursor: context-menu;
+}
+
+.cakewalk_tags_container .cakewalk_tags_results .cakewalk_tags_existing_tag:hover {
+    background-color: #6fa9f3;
+    color: #ffffff;
+}
